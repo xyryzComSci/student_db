@@ -1,0 +1,41 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Panel</title>
+    <style>
+        body { display: flex; }
+        .nav { width: 200px; height: 100vh; background: #333; color: white; padding: 20px; }
+        .nav button { display: block; width: 100%; margin: 10px 0; padding: 10px; background: #444; color: white; border: none; cursor: pointer; }
+        .content { flex: 1; padding: 20px; }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="firebaseauth.js"></script>
+</head>
+<body>
+    <nav>
+        <a href='add-student.html'>Add Student</a>
+        <a href='view-students.html'>View Students</a>
+        <a href='delete-student.html'>Delete Student</a>
+    </nav>
+
+    <section>
+        <!-- delete-student.html -->
+        <h2>Delete Student</h2>
+        <input type="text" id="searchStudent" placeholder="Enter Student ID">
+        <button onclick="deleteStudent()">Delete</button>
+        <script>
+            async function deleteStudent() {
+                const studentId = document.getElementById("searchStudent").value;
+                if (!studentId) return alert("Enter a student ID");
+                await fetch(`https://your-backend-url/students/${studentId}`, { method: "DELETE" });
+                alert("Student deleted!");
+            }
+        </script>
+    </section>
+    
+</body>
+</html>
+
+
+
