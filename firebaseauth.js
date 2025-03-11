@@ -15,21 +15,5 @@
   const app = initializeApp(firebaseConfig);
 
   const db = getFirestore();
-
-  const colRef = collection(db, 'students');
-
-  getDocs(colRef)
-    .then((snapshot => {
-        let students = [];
-        snapshot.docs.forEach((doc) => {
-            students.push({ ...doc.data(), id: doc.id })
-        })
-        console.log(students)
-    })) 
-    .catch(err =>{
-        console.log(err.message)
-    });
-
-
-
+  export{db}
 
