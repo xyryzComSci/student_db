@@ -1,0 +1,45 @@
+[debug] [2025-03-24T04:57:14.194Z] ----------------------------------------------------------------------
+[debug] [2025-03-24T04:57:14.196Z] Command:       C:\Users\xyryz\AppData\Local\Temp\SCOPED~3\firebase-tools-instant-win.exe C:\Users\xyryz\.cache\firebase\tools\lib\node_modules\firebase-tools\lib\bin\firebase serve --project student-information-16bc7
+[debug] [2025-03-24T04:57:14.196Z] CLI Version:   13.35.1
+[debug] [2025-03-24T04:57:14.196Z] Platform:      win32
+[debug] [2025-03-24T04:57:14.196Z] Node Version:  v18.5.0
+[debug] [2025-03-24T04:57:14.197Z] Time:          Mon Mar 24 2025 12:57:14 GMT+0800 (Philippine Standard Time)
+[debug] [2025-03-24T04:57:14.197Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-24T04:57:14.375Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-24T04:57:14.376Z] > authorizing via signed-in user (22-1-00247@vsu.edu.ph)
+[debug] [2025-03-24T04:57:14.376Z] [iam] checking project student-information-16bc7 for permissions ["firebase.projects.get"]
+[debug] [2025-03-24T04:57:14.376Z] Checked if tokens are valid: true, expires at: 1742794650846
+[debug] [2025-03-24T04:57:14.377Z] Checked if tokens are valid: true, expires at: 1742794650846
+[debug] [2025-03-24T04:57:14.377Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/student-information-16bc7:testIamPermissions [none]
+[debug] [2025-03-24T04:57:14.377Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/student-information-16bc7:testIamPermissions x-goog-quota-user=projects/student-information-16bc7
+[debug] [2025-03-24T04:57:14.377Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/student-information-16bc7:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-03-24T04:57:15.379Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/student-information-16bc7:testIamPermissions 200
+[debug] [2025-03-24T04:57:15.381Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/student-information-16bc7:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-03-24T04:57:15.381Z] Checked if tokens are valid: true, expires at: 1742794650846
+[debug] [2025-03-24T04:57:15.381Z] Checked if tokens are valid: true, expires at: 1742794650846
+[debug] [2025-03-24T04:57:15.381Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/student-information-16bc7 [none]
+[debug] [2025-03-24T04:57:16.418Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/student-information-16bc7 200
+[debug] [2025-03-24T04:57:16.418Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/student-information-16bc7 {"projectNumber":"939023653355","projectId":"student-information-16bc7","lifecycleState":"ACTIVE","name":"Student Information","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-03-10T22:34:34.794286Z","parent":{"type":"organization","id":"971879419593"}}
+[info] 
+[info] === Serving from 'C:\Users\xyryz\OneDrive\Desktop\Cloud_app\main'...
+[info] 
+[debug] [2025-03-24T04:57:16.425Z] Checked if tokens are valid: true, expires at: 1742794650846
+[debug] [2025-03-24T04:57:16.426Z] Checked if tokens are valid: true, expires at: 1742794650846
+[debug] [2025-03-24T04:57:16.426Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/student-information-16bc7/sites 
+[debug] [2025-03-24T04:57:17.474Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/student-information-16bc7/sites 200
+[debug] [2025-03-24T04:57:17.474Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/student-information-16bc7/sites {"sites":[{"name":"projects/student-information-16bc7/sites/student-information-16bc7","defaultUrl":"https://student-information-16bc7.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2025-03-24T04:57:17.474Z] Checked if tokens are valid: true, expires at: 1742794650846
+[debug] [2025-03-24T04:57:17.474Z] Checked if tokens are valid: true, expires at: 1742794650846
+[debug] [2025-03-24T04:57:17.475Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/student-information-16bc7/webApps/-/config [none]
+[debug] [2025-03-24T04:57:18.072Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/student-information-16bc7/webApps/-/config 200
+[debug] [2025-03-24T04:57:18.072Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/student-information-16bc7/webApps/-/config {"projectId":"student-information-16bc7","storageBucket":"student-information-16bc7.firebasestorage.app","apiKey":"AIzaSyBl4Q-HIv4McBFewP4qfW7gvnkJezv4LKs","authDomain":"student-information-16bc7.firebaseapp.com","messagingSenderId":"939023653355"}
+[debug] [2025-03-24T04:57:18.110Z] Checked if tokens are valid: true, expires at: 1742794650846
+[debug] [2025-03-24T04:57:18.110Z] Checked if tokens are valid: true, expires at: 1742794650846
+[debug] [2025-03-24T04:57:18.110Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/student-information-16bc7 [none]
+[debug] [2025-03-24T04:57:18.557Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/student-information-16bc7 200
+[debug] [2025-03-24T04:57:18.557Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/student-information-16bc7 {"projectId":"student-information-16bc7","projectNumber":"939023653355","displayName":"Student Information","name":"projects/student-information-16bc7","resources":{"hostingSite":"student-information-16bc7"},"state":"ACTIVE","etag":"1_0f75629e-7029-476a-b2b7-bddc3ddcd4a5"}
+[debug] [2025-03-24T04:57:18.558Z] Specified "public" directory "main" does not exist; Deploy to Hosting site "student-information-16bc7" may fail or be empty.
+[info] i  hosting[student-information-16bc7]: Serving hosting files from: main {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mmain\u001b[22m"}}
+[info] +  hosting[student-information-16bc7]: Local server: http://localhost:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5000\u001b[22m\u001b[24m"}}
+[info] i  hosting: ::1 - - [24/Mar/2025:04:57:28 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 OPR/117.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"::1 - - [24/Mar/2025:04:57:28 +0000] \"GET / HTTP/1.1\" 404 139 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36 OPR/117.0.0.0\""}}
